@@ -1,0 +1,90 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fon-color{
+    background-color: deepskyblue;
+}
+
+.ob-havo{
+    width: 250px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+}
+
+.box{
+    max-width: 700px;
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 50px;
+    padding-top: 10px;
+    gap: 100px;
+}
+
+.quyosh{
+    width: 300px;
+    margin-top: 30px;
+}
+
+.bulut{
+    width: 300px;
+}
+
+
+.image-quyosh{
+    margin-left: 80px;
+    padding-bottom: 25px;
+}
+
+.image-bulut{
+    width: 200px;
+    margin-left: 50px;
+}
+
+.color{
+    color: deepskyblue;
+}
+
+.font{
+    font-weight: 100;
+}
+
+.size{
+    font-size: 20px;
+}
+
+.size1{
+    font-size: 30px;
+}
+
+.title1{
+    text-align: center;
+}
+
+.title1-2{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.title2{
+    text-align: center;
+}
+
+.title2-2{
+    text-align: center;
+    margin-top: 5px;
+}
+

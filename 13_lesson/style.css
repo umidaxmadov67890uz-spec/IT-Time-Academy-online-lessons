@@ -1,0 +1,75 @@
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.btn {
+  position: relative;
+  padding: 15px 70px;
+  font-size: 20px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transform: 0.3s ease;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.btn::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #00f0ff;
+  opacity: 0.1;
+}
+
+.btn::after {
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: linear-gradient(circle, #00f0ff55, transparent);
+  opacity: 0;
+  transform: 1;
+}
+
+.btn:hover::after {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.btn::after {
+  height: calc(100% + 20px);
+  background: radial-gradient(circle, #00f0ff55, transparent);
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.btn:hover::after {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+.btn:hover {
+  color: #00f0f0;
+  box-shadow: 0 0 5px #00f0ff, 0 0 20px #00f0ff;
+  transition: 0.3s;
+}
