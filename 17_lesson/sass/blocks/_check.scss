@@ -1,0 +1,96 @@
+.check {
+  margin-top: 200px;
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: $size36;
+    line-height: 1.55;
+    color: $color1;
+  }
+  &__line {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 55px;
+    height: 3px;
+    background: $color1;
+  }
+  &__cards {
+    background-image: url(../../images/bg-image-4.png);
+    background-repeat: no-repeat;
+    background-position-y: 25px;
+    background-position-x: right;
+    &__list {
+      margin-top: 70px;
+      margin-bottom: 60px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+
+      &__item {
+        height: 510px;
+        &__bg-image {
+          background-image: url("../../images/bg-image.png");
+          background-repeat: no-repeat;
+          width: 140px;
+          height: 125px;
+          position: relative;
+          top: -40px;
+          left: -50px;
+        }
+        &__card {
+          width: 350px;
+          padding: 0 0 35px;
+          background: $color3;
+          border-radius: 20px;
+          margin-bottom: 100px;
+          box-shadow: 10px 40px 50px 0px #e5e9f666;
+          &__img {
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+            &__image {
+              height: 240px;
+            }
+          }
+          &__title {
+            margin: 24px 0 12px 30px;
+            width: 260px;
+            font-weight: bold;
+            font-size: $size20;
+            line-height: 1.52;
+            color: $color1;
+          }
+          &__text {
+            width: 265px;
+            margin-left: 30px;
+            font-weight: 300;
+            font-size: $size16;
+            line-height: 1.75;
+            color: $color2;
+          }
+          &__text--width {
+            width: 250px;
+          }
+          &__link {
+            color: $color5;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin: 25px 0 0 30px;
+          }
+        }
+        &__card--position{
+            position: relative;
+            top: -125px;
+        }
+      }
+      &__item--width{
+        width: 0px;
+      }
+    }
+  }
+  &__btn{
+    display: block;
+    margin: 0 auto;
+  }
+}

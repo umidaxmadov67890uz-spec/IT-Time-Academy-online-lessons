@@ -1,0 +1,39 @@
+.header{
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        &__text{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: $color4;
+            font-size: $size28;
+            color: $color3;
+            font-weight: 700;
+        }
+        &__logo-text{
+            color: #233348;
+        }    
+    }
+    &__nav__list{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        &__item-link{
+        color: $color2;
+        }
+        &__item-link--active{
+            color: $color1;
+            font-weight: bold;
+        }
+    }
+}

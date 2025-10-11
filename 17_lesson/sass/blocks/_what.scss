@@ -1,0 +1,125 @@
+.what {
+  margin: 260px 50px 0;
+  padding: 30px 0 0;
+  height: 340px;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 25px;
+  &__bg-image {
+    background-image: url(../../images/bg-image-3.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 100px;
+    position: relative;
+    top: -20px;
+    right: -1015px;
+  }
+  &__title {
+    margin: 0 0 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: $size36;
+    line-height: 1.33;
+    color: $color3;
+    position: relative;
+    top: -100px;
+  }
+  &__line {
+    margin: 0 auto;
+    width: 55px;
+    height: 2px;
+    background: $color3;
+    position: relative;
+    top: -100px;
+  }
+  &__group {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: -100px;
+    &__left {
+      display: flex;
+      gap: 30px;
+      &__img {
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid $color3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__image {
+          margin: 70px 0 0 30px;
+          width: 300px;
+        }
+      }
+      &__box {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        &__title {
+          font-weight: bold;
+          font-size: $size22;
+          color: $color3;
+        }
+        &__text {
+          font-weight: 400;
+          font-size: $size18;
+          color: $color3;
+          opacity: 0.6;
+        }
+      }
+    }
+    &__right {
+      &__text {
+        width: 400px;
+        font-weight: 300;
+        font-size: $size19;
+        line-height: 1.57;
+        color: $color3;
+        opacity: 0.6;
+      }
+    }
+  }
+  &__bg-image--end{
+    background-image: url(../../images/bg-image.png);
+    background-repeat: no-repeat;
+    height: 115px;
+    position: relative;
+    top: -200px;
+    left: -50px;
+    z-index: -50;
+  }
+}
+
+.what-end{
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color4;
+    &__box-group{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        &__box{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $color6;
+            opacity: 0.3;
+        }
+        &__box--active{
+            opacity: 1;
+        }
+    }
+    &__svg-start{
+        transform: rotate(180deg);
+        opacity: 0.5;     
+    }
+}

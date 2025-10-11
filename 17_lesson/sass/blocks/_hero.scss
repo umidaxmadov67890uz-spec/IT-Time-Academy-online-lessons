@@ -1,0 +1,48 @@
+.hero--bg-image{
+    background-image: url(../../images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90px;
+    position: relative;
+    top: -570px;
+
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__left {
+    width: 445px;
+    height: 335px;
+    display: flex;
+    gap: 25px;
+    align-items: start;
+    flex-direction: column;
+    &__title {
+      font-size: $size48;
+      line-height: 1.16;
+      font-weight: bold;
+    }
+    &__text {
+        margin-bottom: 20px;
+      font-weight: 300;
+      font-size: $size20;
+      line-height: 1.52;
+      color: $color2;
+    }
+    &__btn{
+        background: $color4;
+        color: $color3;
+    }
+  }
+  &__right {
+    width: 690px;
+    height: 590px;
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

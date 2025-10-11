@@ -1,0 +1,40 @@
+.download {
+    margin-top: 250px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+  &__right__image {
+    width: 550px;
+    height: 370px;
+    object-fit: contain;
+  }
+  &__left {
+    margin-left: 140px;
+    &__title {
+      width: 350px;
+      font-weight: bold;
+      font-size: $size36;
+      line-height: 1.55;
+      color: $color1;
+    }
+    &__line {
+      width: 55px;
+      height: 2px;
+      margin: 25px 0 30px;
+      background: $color1;
+    }
+    &__text {
+      width: 370px;
+      margin-bottom: 35px;
+      font-weight: 300;
+      font-size: $size18;
+      line-height: 1.66;
+    }
+    &__btn {
+      display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+  }
+}
